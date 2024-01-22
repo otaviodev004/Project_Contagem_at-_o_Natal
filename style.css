@@ -1,0 +1,284 @@
+/* CLASSES GERAIS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F7F7F7;
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-padrao button{
+    padding: 13px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #e7e7e7;
+    background-color: #cd3c32;
+    /* tirando as bordas */
+    border: 0;
+    /* deixando as bordas arredondadas */
+    border-radius: 10px;
+    /* mudança de cursos */
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover, form .btn-padrao input:hover{
+    box-shadow: 0px 0px 8px #cd3c32;
+    transform: scale(1.05)
+}
+
+
+/*   */
+/*   */
+/*    */
+/* CABEÇALHO */
+header {
+    padding: 10px 4%;
+    color: #cd3c32;
+    box-shadow: 0px 0 0px 0.5px #cd3c32;
+}
+
+header > .cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #121214;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #cd3c32;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+
+/*   */
+/*   */
+/*    */
+/* APRESENTAÇÃO DO SITE */
+section.apresentacao{
+    padding: 30pX 4%;
+    background-color: #ffe9e8;
+}
+
+section.apresentacao .flex{
+    margin-left: 22%;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.apresentacao .titulo span{
+    color: #cd3c32;
+}
+
+.text-apresentation h1{
+    font-size: 50px;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.text-apresentation p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.text-apresentation .txt-apresentacao p{
+    margin: 40px 0;
+    text-align: justify;
+}
+
+.apresentacao .text-apresentation .btn-padrao{
+    margin-top: 15px;
+}
+
+
+
+/*   */
+/*   */
+/*    */
+/* TEMPO LIMITADO */
+section.tempo-limitado{
+    padding: 30px 4%;
+    /* box-shadow: 0px 0px 0px 0.5px #FFD700; */
+}
+
+section.tempo-limitado .interface{
+    align-items: center;
+    justify-content: center;
+    /* gap: 100px; */
+}
+
+.tempo-limitado .titulo-temp span{
+    color: #2b5e57;
+}
+
+.tempo-limitado .titulo-temp h1{
+    text-align: center;
+    font-size: 50px;
+    line-height: 40px;
+}
+
+.tempo-limitado .titulo-temp p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+section.tempo-limitado .countdown{
+    margin-top: 10px;
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.countdown .time {
+color: #cd3c32;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 15px;
+}
+
+.countdown .time h2 {
+margin: 0 0 5px;
+}
+
+@media (max-width: 500px) {
+h1 {
+    font-size: 45px;
+}
+
+.time {
+    margin: 5px;
+}
+
+.time h2 {
+    font-size: 12px;
+    margin: 0;
+}
+
+.time small {
+    font-size: 10px;
+}
+}
+
+.tempo-limitado .imagem-tempo{
+    align-items: center;
+    justify-content: center;
+    margin-left: 33%;
+}
+
+
+/*   */
+/*   */
+/*    */
+/* PARTE FINAL */
+section.text-final{
+    padding: 30px 4%;
+    box-shadow: 0px 0px 0px 0.5px #cd3c32;
+}
+
+section.text-final .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.text-final .generosidade-final h1{
+    font-size: 50px;
+    line-height: 40px;
+}
+
+.text-final .generosidade-final p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.text-final .generosidade-final p span{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #cd3c32;
+}
+
+.text-final .generosidade-final .btn-padrao{
+    margin-top: 15px;
+}
+
+
+
+/* .. */
+/* .. */
+/* .. */
+/* RODAPÉ */
+footer{
+    padding: 30px 4%;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 10px 0;
+}
+
+.borda{
+    border-top: 2px solid #cd3c32;
+}
+
+footer .line-footer p i{
+    color: #cd3c32;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #2b5e57;
+}
+
+.btn-social button{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #cd3c32;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
